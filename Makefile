@@ -11,7 +11,7 @@ OBJCOPY = arm-none-eabi-objcopy
 RM      = rm
 FLASH   = st-flash
 
-CFLAGS  = -O0 -Wall
+CFLAGS  = -O0 -ggdb -Wall
 CFLAGS += -mthumb -mcpu=cortex-m3 -mfloat-abi=soft
 CFLAGS += -T $(PACKAGE_DIR)/Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/linker/STM32F103XB_FLASH.ld
 CFLAGS += -Wl,--gc-sections
